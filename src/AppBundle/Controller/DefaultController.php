@@ -65,6 +65,27 @@ class DefaultController extends Controller {
         return new Response("ok");
     }
 
-
+    /**
+     * @Route("/user/typing")
+     */
+    public function setTyping(Request $r){
+        $user = $this->getUser();
+        $user->setTyping(true);
+        $em = $this->getDoctrine()->getManager();
+        $em->persist($user);
+        $em->flush();
+        return new Response("ok");
+    }
+    /**
+     * @Route("/user/typing/no")
+     */
+    public function setNotTyping(Request $r){
+        $user = $this->getUser();
+        $user->setTyping(false);
+        $em = $this->getDoctrine()->getManager();
+        $em->persist($user);
+        $em->flush();
+        return new Response("nok");
+    }
 
 }
