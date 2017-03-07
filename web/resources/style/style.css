@@ -1,18 +1,9 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 17 févr. 2017, 14:42:52
-    Author     : loic
-*/
 *{
     margin : 0;
     padding : 0;
 }
 html{
-    background-color: grey;
+    background-color: #08C;
 }
 div{
     position: relative;
@@ -26,6 +17,7 @@ div{
     width: 20%;
     float: left;
     /*background-color: white;*/
+
 }
 #right{
     width: 80%;
@@ -39,27 +31,40 @@ div{
 #bottom{
    
 }
-
+form{
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 20px;
+}
 #users{
     margin: 20px;
     background-color: white;
+    box-shadow: 2px 2px 20px;
+    border-radius: 10px;
+    padding: 10px;
 }
 #messages{
     margin: 20px;
     background-color: white;
     overflow-y: scroll;
+    padding: 5px;
 }
 #message{
     line-height: 60px;
     vertical-align: middle;
     margin: 20px;
-    background-color: white;
+    /*background-color: white;*/
 }
 #message input[type='text']{
     width: 90%;
     height : 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px ;
 }
 #message input[type='submit']{
     width: 9%;
     height : 50px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
 }
